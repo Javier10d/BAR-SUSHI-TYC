@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Sushi TYC | Carta Completa 2024</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-card: #1c1c1c;
+            --accent: #ff6600;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --font-stack: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        header {
+            background-color: rgba(10, 10, 10, 0.98);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-muted);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .section-title span {
+            color: var(--accent);
+        }
+
+        /* Menu Grid System */
+        .menu-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-category {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            height: fit-content;
+        }
+
+        .menu-category h3 {
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            align-items: baseline;
+        }
+
+        .item-name {
+            font-weight: 500;
+            font-size: 0.95rem;
+            flex: 1;
+        }
+
+        .item-dots {
+            flex: 1;
+            border-bottom: 1px dotted #444;
+            margin: 0 8px;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: var(--accent);
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .item-sub {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: -5px;
+            margin-bottom: 8px;
+        }
+
+        /* Menus Highlight */
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .promo-card {
+            background: linear-gradient(145deg, #1a1a1a, #000);
+            border: 1px solid var(--accent);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .promo-card h4 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .promo-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .promo-card li {
+            margin-bottom: 5px;
+        }
+
+        .promo-price {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: #000;
+            color: #444;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">BAR SUSHI <span>TYC</span></div>
+
+                <div class="menu-toggle">☰</div>
+
+                <div class="nav-links">
+                    <a href="#menus">Menús</a>
+                    <a href="#entrantes">Entrantes</a>
+                    <a href="#sushi">Sushi</a>
+                    <a href="#cocina">Cocina</a>
+                    <a href="#bebidas">Bebidas</a>
+                    <a href="#postres">Postres</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="menus" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Menús</span></h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <h4>MENÚ DEL DÍA</h4>
+                    <ul>
+                        <li><strong>Primer Plato:</strong> Gyoza / Miso / Arroz Sushi / Ensalada</li>
+                        <li><strong>Segundo Plato:</strong> Arroz Tokyo / Yakisoba</li>
+                        <li><strong>Tercer Plato:</strong> Variado Maki / Nigiri / Crispy</li>
+                        <li><em>Incluye Bebida y Postre</em></li>
+                    </ul>
+                    <div class="promo-price">12,90€</div>
+                </div>
+                <div class="promo-card" style="border-style: double; border-width: 3px;">
+                    <h4>MENÚ DEGUSTACIÓN</h4>
+                    <ul>
+                        <li>Ebi Fry / Wakame / Sugerencia</li>
+                        <li>Selección Especial Sushi & Maki</li>
+                        <li>Tempura Variada / Sashimi / Maki Dragon</li>
+                        <li><em>Incluye Postre y 1 Bebida</em></li>
+                    </ul>
+                    <div class="promo-price">25,90€</div>
+                </div>
+                <div class="promo-card">
+                    <h4>KAEDE KID</h4>
+                    <ul>
+                        <li>Gyoza (3p)</li>
+                        <li>Yakisoba + Arroz Sushi Teriyaki</li>
+                        <li>Bebida y Postre</li>
+                        <li><em>Especial para niños</em></li>
+                    </ul>
+                    <div class="promo-price">6,90€</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="entrantes">
+        <div class="container">
+            <h2 class="section-title">Entrantes y <span>Ensaladas</span></h2>
+            <div class="menu-wrapper">
+                <div class="menu-category">
+                    <h3>Para Empezar</h3>
+                    <div class="item"><span class="item-name">Rollito de Mariscos (4p)</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Rollito de Langostino (5p)</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Gyoza de Carne (6p)</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Gyoza Vegetal (6p)</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Gyoza Veganas (10p)</span>
+                        <div class="item-dots"></div><span class="item-price">12,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Sopa Miso</span>
+                        <div class="item-dots"></div><span class="item-price">4,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Edamame</span>
+                        <div class="item-dots"></div><span class="item-price">5,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Pan Chino (1p)</span>
+                        <div class="item-dots"></div><span class="item-price">1,80€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ebi Fry (Langostino frito)</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Ensaladas y Tartar</h3>
+                    <div class="item"><span class="item-name">Ensalada Wakame</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ensalada Tai</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ensalada de la Casa</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Tartar de Salmón Cake</span>
+                        <div class="item-dots"></div><span class="item-price">14,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Tartar de Atún Cake</span>
+                        <div class="item-dots"></div><span class="item-price">15,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ceviche de Pescado</span>
+                        <div class="item-dots"></div><span class="item-price">14,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Carpaccio de Salmón</span>
+                        <div class="item-dots"></div><span class="item-price">12,90€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sushi">
+        <div class="container">
+            <h2 class="section-title">Sushi, <span>Maki y Sashimi</span></h2>
+            <div class="menu-wrapper">
+                <div class="menu-category">
+                    <h3>Nigiri (2 piezas)</h3>
+                    <div class="item"><span class="item-name">Nigiri Salmón</span>
+                        <div class="item-dots"></div><span class="item-price">2,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Nigiri Atún</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Nigiri Pez Mantequilla</span>
+                        <div class="item-dots"></div><span class="item-price">2,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Nigiri Langostino</span>
+                        <div class="item-dots"></div><span class="item-price">2,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Nigiri Anguila</span>
+                        <div class="item-dots"></div><span class="item-price">3,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Nigiri Salmón Flameado</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Maki Clásico (8 piezas)</h3>
+                    <div class="item"><span class="item-name">Maki Salmón</span>
+                        <div class="item-dots"></div><span class="item-price">5,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Atún</span>
+                        <div class="item-dots"></div><span class="item-price">5,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Pepino & Phila</span>
+                        <div class="item-dots"></div><span class="item-price">2,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Aguacate & Phila</span>
+                        <div class="item-dots"></div><span class="item-price">3,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Mango & Phila</span>
+                        <div class="item-dots"></div><span class="item-price">3,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Pez Mantequilla</span>
+                        <div class="item-dots"></div><span class="item-price">4,90€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Especiales Kaede (8 piezas)</h3>
+                    <div class="item"><span class="item-name">Maki Arcoiris (Rainbow)</span>
+                        <div class="item-dots"></div><span class="item-price">10,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Dragón</span>
+                        <div class="item-dots"></div><span class="item-price">8,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Pollo Crispy</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Salmón Phila Crispy</span>
+                        <div class="item-dots"></div><span class="item-price">10,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Kaede Tiger</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Maki Vegetal Especial</span>
+                        <div class="item-dots"></div><span class="item-price">6,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">California Roll</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Futomaki Variado</span>
+                        <div class="item-dots"></div><span class="item-price">11,90€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Sashimi y Temaki</h3>
+                    <div class="item"><span class="item-name">Sashimi Salmón (10p)</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Sashimi Atún (10p)</span>
+                        <div class="item-dots"></div><span class="item-price">15,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Sashimi Mixto (12p)</span>
+                        <div class="item-dots"></div><span class="item-price">16,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Temaki Salmón & Aguacate</span>
+                        <div class="item-dots"></div><span class="item-price">4,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Temaki Atún Picante</span>
+                        <div class="item-dots"></div><span class="item-price">5,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Temaki Anguila</span>
+                        <div class="item-dots"></div><span class="item-price">6,00€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cocina">
+        <div class="container">
+            <h2 class="section-title">Platos <span>Calientes y Ramen</span></h2>
+            <div class="menu-wrapper">
+                <div class="menu-category">
+                    <h3>Ramen</h3>
+                    <div class="item"><span class="item-name">Ramen de Pollo</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ramen de Marisco</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ramen Vegetal</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ramen Especial TYC</span>
+                        <div class="item-dots"></div><span class="item-price">15,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ramen Sin Gluten</span>
+                        <div class="item-dots"></div><span class="item-price">15,90€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Arroces y Fideos</h3>
+                    <div class="item"><span class="item-name">Arroz Frito con Salmón</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Arroz Tokyo</span>
+                        <div class="item-dots"></div><span class="item-price">7,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Arroz Blanco Sushi</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Fideos Yakisoba Pollo</span>
+                        <div class="item-dots"></div><span class="item-price">8,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Yakisoba de Langostinos</span>
+                        <div class="item-dots"></div><span class="item-price">10,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Udon Salteado</span>
+                        <div class="item-dots"></div><span class="item-price">11,90€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Especialidades al Wok / Fritura</h3>
+                    <div class="item"><span class="item-name">Pollo al Curry con Arroz</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Tempura de Langostinos</span>
+                        <div class="item-dots"></div><span class="item-price">14,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Tempura de Verduras</span>
+                        <div class="item-dots"></div><span class="item-price">10,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Poke de Salmón</span>
+                        <div class="item-dots"></div><span class="item-price">13,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Poke de Atún</span>
+                        <div class="item-dots"></div><span class="item-price">14,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Pato Laqueado</span>
+                        <div class="item-dots"></div><span class="item-price">16,90€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Ternera con Salsa de Ostras</span>
+                        <div class="item-dots"></div><span class="item-price">12,90€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bebidas">
+        <div class="container">
+            <h2 class="section-title">Bebidas y <span>Vinos</span></h2>
+            <div class="menu-wrapper">
+                <div class="menu-category">
+                    <h3>Refrescos y Cervezas</h3>
+                    <div class="item"><span class="item-name">Agua Mineral</span>
+                        <div class="item-dots"></div><span class="item-price">2,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Refrescos (Cola, Fanta, etc)</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Cerveza Nacional</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Cerveza Japonesa (Saporo/Asahi)</span>
+                        <div class="item-dots"></div><span class="item-price">3,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Cerveza de Grifo (Caña)</span>
+                        <div class="item-dots"></div><span class="item-price">1,80€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Copa de Vino</span>
+                        <div class="item-dots"></div><span class="item-price">3,00€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Carta de Vinos y Sake</h3>
+                    <div class="item"><span class="item-name">Vino Blanco Rueda</span>
+                        <div class="item-dots"></div><span class="item-price">14,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Vino Tinto Rioja/Ribera</span>
+                        <div class="item-dots"></div><span class="item-price">16,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Vino Rosado</span>
+                        <div class="item-dots"></div><span class="item-price">13,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Cava (Botella)</span>
+                        <div class="item-dots"></div><span class="item-price">18,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Sake Caliente / Frío</span>
+                        <div class="item-dots"></div><span class="item-price">5,00€</span>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Cafés e Infusiones</h3>
+                    <div class="item"><span class="item-name">Café Solo / Cortado</span>
+                        <div class="item-dots"></div><span class="item-price">1,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Café con Leche</span>
+                        <div class="item-dots"></div><span class="item-price">1,80€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Capuchino</span>
+                        <div class="item-dots"></div><span class="item-price">2,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Té Verde Japonés</span>
+                        <div class="item-dots"></div><span class="item-price">2,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Infusiones Variadas</span>
+                        <div class="item-dots"></div><span class="item-price">1,80€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="postres">
+        <div class="container">
+            <h2 class="section-title">Postres <span>Dulces</span></h2>
+            <div class="menu-wrapper">
+                <div class="menu-category" style="width: 100%; grid-column: span 3;">
+                    <div class="item"><span class="item-name">Mochi Variado (2p)</span>
+                        <div class="item-dots"></div><span class="item-price">4,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Dorayaki</span>
+                        <div class="item-dots"></div><span class="item-price">4,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Tarta de Queso con Té Verde</span>
+                        <div class="item-dots"></div><span class="item-price">5,50€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Helado de Sésamo o Té Verde</span>
+                        <div class="item-dots"></div><span class="item-price">4,00€</span>
+                    </div>
+                    <div class="item"><span class="item-name">Fruta del Tiempo</span>
+                        <div class="item-dots"></div><span class="item-price">3,50€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bar Sushi TYC Valencia. Carrer de les Brigades Internacionals, 9. Reservas: 624 47 08 28</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
