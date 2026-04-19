@@ -75,9 +75,16 @@
         .logo span { color: var(--accent); }
 
         .nav-links { display: flex; gap: 2rem; }
+<<<<<<< HEAD
         .nav-links a { font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
 
         /* Hero Section - IMAGEN DE FONDO PRINCIPAL */
+=======
+        .nav-links a { font-weight: 600; text-transform: uppercase; font-size: 0.8rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+>>>>>>> 7f8d8a4 (Hecho)
         .hero {
             height: 100vh;
             display: flex;
@@ -112,9 +119,43 @@
 
         .menu-content { padding: 1.5rem; text-align: center; }
         .menu-content h3 { margin-bottom: 0.5rem; color: var(--accent); }
+<<<<<<< HEAD
         .price { font-size: 1.4rem; font-weight: bold; margin-top: 1rem; }
 
         /* About Section - IMAGEN NOSOTROS */
+=======
+
+        /* Horario Table */
+        .schedule-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .schedule-table tr {
+            border-bottom: 1px solid #333;
+        }
+
+        .schedule-table tr:last-child { border-bottom: none; }
+
+        .schedule-table td {
+            padding: 1rem;
+        }
+
+        .day-name { font-weight: bold; color: var(--accent); width: 40%; }
+        .closed { color: #ff4444; font-weight: bold; }
+
+        /* About Section */
+>>>>>>> 7f8d8a4 (Hecho)
         .about-flex { display: flex; gap: 3rem; align-items: center; flex-wrap: wrap; }
         .about-text { flex: 1; min-width: 300px; }
         .about-image {
@@ -143,7 +184,11 @@
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--accent); }
 
         @media (max-width: 768px) {
+<<<<<<< HEAD
             .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; width: 100%; background: #0a0a0a; padding: 2rem; }
+=======
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; width: 100%; background: #0a0a0a; padding: 2rem; text-align: center; }
+>>>>>>> 7f8d8a4 (Hecho)
             .nav-links.active { display: flex; }
             .menu-toggle { display: block; }
             .hero h1 { font-size: 2.2rem; }
@@ -162,6 +207,10 @@
                 <ul class="nav-links" id="nav-list">
                     <li><a href="sushi.html">Nuestra Carta</a></li>
                     <li><a href="#about">Nosotros</a></li>
+<<<<<<< HEAD
+=======
+                    <li><a href="#horario">Horario</a></li>
+>>>>>>> 7f8d8a4 (Hecho)
                     <li><a href="#contact">Ubicación</a></li>
                 </ul>
             </nav>
@@ -182,11 +231,18 @@
     <section id="menu" class="container">
         <h2 class="section-title">Especialidades <span>Destacadas</span></h2>
         <div class="menu-grid">
+<<<<<<< HEAD
 
             <div class="menu-card">
                 <div class="menu-img" style="background-image: url('sushi3.png');"></div>
                 <div class="menu-content">
                     <h3>Sushi con mango</h3>
+=======
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('sushi3.png');"></div>
+                <div class="menu-content">
+                    <h3>Sushi Roll Mango</h3>
+>>>>>>> 7f8d8a4 (Hecho)
                     <p>Fusión dulce y salada con mango fresco caramelizado.</p>
                 </div>
             </div>
@@ -198,7 +254,10 @@
                     <p>6 piezas de empanadillas a la plancha con receta artesana.</p>
                 </div>
             </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f8d8a4 (Hecho)
         </div>
     </section>
 
@@ -207,11 +266,15 @@
             <div class="about-text">
                 <h2 class="section-title" style="text-align: left;">Conoce <span>TYC Bar</span></h2>
                 <p>En <em>"Bar TYC Sushi"</em> preparamos cada pieza de sushi al momento. Frescura garantizada y un ambiente familiar inmejorable.</p> <br>
+<<<<<<< HEAD
                 <p>Nuestro equipo trabaja con pasión para acercar la esencia de la cocina japonesa a nuestro barrio, seleccionando cada
                     mañana los mejores productos para garantizar un sabor auténtico. </p> <br>
                 <p>Creemos que la alta calidad no debe estar reñida con la cercanía,
                     por lo que ofrecemos un servicio atento en un espacio donde cada detalle está pensado para tu disfrute. Somos el destino ideal
                     para quienes buscan una experiencia gastronómica honesta, fresca y con el sello de identidad de Valencia.</p> <br>
+=======
+                <p>Nuestro equipo trabaja con pasión para acercar la esencia de la cocina japonesa a nuestro barrio, seleccionando cada mañana los mejores productos para garantizar un sabor auténtico. </p> <br>
+>>>>>>> 7f8d8a4 (Hecho)
                 <div>
                     <span class="feature-badge">🍣 Hecho al momento</span>
                     <span class="feature-badge">🛵 Envío a domicilio</span>
@@ -223,12 +286,34 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <section id="contact" class="container">
+=======
+    <section id="horario" class="container">
+        <h2 class="section-title">Nuestro <span>Horario</span></h2>
+        <div class="schedule-container">
+            <table class="schedule-table">
+                <tr><td class="day-name">Lunes</td><td class="closed">Cerrado</td></tr>
+                <tr><td class="day-name">Martes</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+                <tr><td class="day-name">Miércoles</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+                <tr><td class="day-name">Jueves</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+                <tr><td class="day-name">Viernes</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+                <tr><td class="day-name">Sábado</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+                <tr><td class="day-name">Domingo</td><td>10:00–16:00 | 18:30–23:30</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="container" style="border-bottom: none;">
+>>>>>>> 7f8d8a4 (Hecho)
         <h2 class="section-title">Dónde <span>Estamos</span></h2>
         <div style="text-align: center;">
             <p style="font-size: 1.2rem; margin-bottom: 1rem;">📍 Carrer de les Brigades Internacionals, 9, Valencia</p>
             <p style="font-size: 1.2rem; color: var(--accent); font-weight: bold;">📞 Reservas: 624 47 08 28</p>
+<<<<<<< HEAD
             <p style="margin-top: 1rem; color: var(--text-muted);">Abierto todos los días desde las 18:30</p>
+=======
+>>>>>>> 7f8d8a4 (Hecho)
         </div>
     </section>
 
@@ -243,6 +328,16 @@
         menuBtn.addEventListener('click', () => {
             navList.classList.toggle('active');
         });
+<<<<<<< HEAD
+=======
+
+        // Cerrar menú al hacer click en un enlace (móvil)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+            });
+        });
+>>>>>>> 7f8d8a4 (Hecho)
     </script>
 </body>
 
